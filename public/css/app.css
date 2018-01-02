@@ -8358,7 +8358,7 @@ button.close {
   background-size: cover;
   color: #4f4f4f;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.23);
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
@@ -8391,6 +8391,11 @@ button.close {
 }
 
 #home-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#dash-button {
   text-align: center;
 }
 
@@ -8518,5 +8523,14 @@ h3 {
   padding-bottom: 42px;
   background-color: #2b2c2e;
   color: #e4e8eb;
+}
+
+.profile-summary {
+  min-height: 300px;
+  padding: 17px;
+  border: 3px solid #000;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #2b2b2b;
 }
 
