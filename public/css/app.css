@@ -8350,3 +8350,173 @@ button.close {
   }
 }
 
+.mainsection {
+  margin-top: -22px;
+  background-color: #dbdddc;
+  background-image: url(/images/analytics-graphic2.png?043197de0ea2aff4f3d33fe4178f9329);
+  background-position: 0% 30%;
+  background-size: cover;
+  color: #4f4f4f;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.23);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.paragraph-2 {
+  color: #474141;
+}
+
+.w-container {
+  max-width: 728px;
+  margin: auto;
+}
+
+.w-container .w-row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.mainheader {
+  text-align: center;
+}
+
+.main-image {
+  border-radius: 6px;
+}
+
+#home-buttons {
+  text-align: center;
+}
+
+.start-miner-button {
+  background-color: #000;
+  color: #fff;
+  margin-right: 14px;
+  padding: 13px 23px;
+  border: 2px;
+  border-radius: 3px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.start-miner-button:hover {
+  background-color: #489fd9;
+}
+
+.withdraw-button {
+  background-color: transparent;
+  color: #000;
+  margin-right: 14px;
+  padding: 13px 23px;
+  border: 2px  solid #000;
+  border-radius: 3px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.withdraw-button:hover {
+  background-color: #489fd9;
+  border: none;
+  color: #fff;
+}
+
+.section.press {
+  padding-top: 29px;
+  padding-bottom: 38px;
+  background-color: #3e5c50;
+  padding-left: 25px;
+}
+
+.press-logo {
+  display: inline-block;
+  width: 18%;
+  margin: auto;
+  opacity: 0.94;
+}
+
+.small-text {
+  color: rgba(255, 255, 255, 0.31);
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 900;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 900;
+}
+
+.section {
+  padding-top: 29px;
+  padding-bottom: 38px;
+}
+
+.section-subtitle {
+  margin-bottom: 68px;
+  font-size: 19px;
+  line-height: 22px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.how-it-works {
+  background-color: #dde7ed;
+  margin-bottom: 68px;
+  font-size: 19px;
+  line-height: 22px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.plan-wrapper {
+  min-height: 300px;
+  padding: 17px;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #2b2b2b;
+}
+
+.how-it-works-button {
+  margin-top: 10px;
+  background-color: #000;
+  color: #fff;
+  margin-right: 14px;
+  padding: 13px 23px;
+  border: 2px;
+  border-radius: 3px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.how-it-works-button:hover {
+  background-color: #489fd9;
+}
+
+.section.clients {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #a1bfd4;
+}
+
+.section.footer {
+  padding-top: 42px;
+  padding-bottom: 42px;
+  background-color: #2b2c2e;
+  color: #e4e8eb;
+}
+
