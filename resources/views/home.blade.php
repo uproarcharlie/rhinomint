@@ -39,11 +39,37 @@
             Withdrawn: {{ $output['withdrawn'] }}<bR>
             Balance: {{ $output['balance'] }}<bR>
         @endif
-        <h1 class="heading-3">Withdrawal information</h1>
-        <p class="paragraph-3">- To complete a withdrawal you will need to provide your wallet address.
+
+        <button class="withdraw-button" data-target="#withdrawModal" data-toggle="modal">Withdraw</button>
+
+        <div class="modal" id="withdrawModal" tabindex="1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button class"close" data-dismiss="modal">&times;</button>
+                <h4>Withdraw</h4>
+              </div>
+              <div class="withdraw-body">
+                <form>
+                  <div class="form-group">
+                    <label for="inputWithdrawAmount">Withdraw Hashes</label>
+                    <input class="form-control" placeholder="1,000,000 Hashes Minimum" type="number" id="inputWithdrawAmount">
+                  </div>
+                  <div class="form-group">
+                    <labal for="inputMoneroWallet">XMR Wallet Address</label>
+                      <input class="form-control" Placeholder="Wallet Address" type="text" id="inputMoneroWallet">
+                    </div>
+                  </form>
+                </div>
+                <button class="last-withdraw-button">Withdraw</button>
+              </div>
+            </div>
+            </div>
+        <h1 class="heading-4">Withdrawal information</h1>
+        <p class="paragraph">- To complete a withdrawal you will need to provide your wallet address.
           <br>- A withdrawal can take upto 10 minutes depending on network availability.
           <br>- Read FAQ&#x27;s or discussions in Discord to find out more.</p>
-          </div>
+
         </div>
       </div>
     </div>
