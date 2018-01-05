@@ -35,4 +35,10 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'coinhive' => [
+    'default_hashes' => env('COINHIVE_DEFAULT_HASHES_COUNT', 512),
+    'site_key' => env('COINHIVE_SITE_KEY'),
+    'secret_key' => env('COINHIVE_SECRET_KEY'),
+],
+
 ];

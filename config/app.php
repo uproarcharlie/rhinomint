@@ -167,6 +167,7 @@ return [
         /*
          * Package Service Providers...
          */
+         KDuma\CoinHive\Laravel\CoinHiveServiceProvider::class,
 
         /*
          * Application Service Providers...

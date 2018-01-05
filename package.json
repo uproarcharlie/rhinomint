@@ -19,6 +19,6 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
-        "coin-hive": "^1.10.0"
+      
     }
 }
