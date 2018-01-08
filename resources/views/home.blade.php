@@ -40,20 +40,33 @@
             Balance: {{ $output['balance'] }}<bR>
         @endif
 
+<?php
+$xmrPerHash = 	0.00000000006039;
+
+$xmrBalance = $xmrPerHash * $output['balance'];
+
+ ?>
+
+
         <button class="withdraw-button" data-target="#withdrawModal" data-toggle="modal">Withdraw</button>
 
         <div class="modal" id="withdrawModal" tabindex="1">
+
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
                 <button class"close" data-dismiss="modal">&times;</button>
                 <h4>Withdraw</h4>
+                <ul>
+                  <li>Hash Balance: <strong>{{ $output['balance'] }}</strong></li>
+                  <li>Monero Balance: <strong>{{ number_format($xmrBalance, 8) }}</strong></li>
+                </ul>
               </div>
               <div class="withdraw-body">
                 <form>
                   <div class="form-group">
                     <label for="inputWithdrawAmount">Withdraw Hashes</label>
-                    <input class="form-control" placeholder="1,000,000 Hashes Minimum" type="number" id="inputWithdrawAmount">
+                    <input class="form-control" placeholder="0.5XMR Minimum Withdrawal" type="number" id="inputWithdrawAmount">
                   </div>
                   <div class="form-group">
                     <labal for="inputMoneroWallet">XMR Wallet Address</label>
@@ -61,6 +74,7 @@
                     </div>
                   </form>
                 </div>
+                 <button type="button" disabled>Click Me!</button>
                 <button class="last-withdraw-button">Withdraw</button>
               </div>
             </div>
