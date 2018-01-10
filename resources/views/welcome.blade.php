@@ -102,10 +102,57 @@
     <div class="section">
       <div class="container">
         <h2>F.A.Q.</h2>
-      </div>
-      <div class="container">
-        <p><strong>What Cryptocurrency can I mine?</strong><br>Currently you can only Monero with RhinoMint. However we are working hard on adding more cryptocurrencies to RhinoMint.co<br><br><strong>Can I move my Cyptocurrency out of RhinoMint? How do I do it?</strong><br>Yes, you can move your currency out of RhinoMint.co,<br><br><strong>My Hash Rate Seems Low – Why Monero?</strong><br>Monero is different. To mine Monero, you have to calculate hashes with an algorithm called Cryptonight. This algorithm is very compute heavy and – while overall pretty slow – was designed to run well on consumer CPUs.There are solutions to run the Cryptonight algorithm on a GPU instead, but the benefit is about 2x, not 10000x like for other algorithms used by Bitcoin or Ethereum. This makes Cryptonight a nice target for JavaScript and the Browser.Of course, when running through JavaScript performance still takes a bit of a toll, but it&#x27;s not that bad. Our miner uses WebAssembly and runs with about 65% of the performance of a native Miner. For an Intel i7 CPU (one of the fastest desktop CPUs) you should see a hashrate of about 90h/s. A native miner would get to 140h/s.We&#x27;d like to further close this gap and are working on solutions to do so.<br><br><strong>What sort of payout can I expect?</strong><br>We pay per solved hash. The payout rate is adjusted automatically every few hours based on the global difficulty of the network and the average reward per block. The payout rate is calculated like this:(/) * * 0.5<br><br>With the current network difficulty of 58.849G (updated Dec 23, 2017 - 22:03:00) and average block reward of 5.77 XMR:(/58849124194) * 5.77 XMR * 0.5 = 0.000069 XMR per 1M hashesI.e. you get 50% of the average XMR we earn. <br><br>Unlike a traditional mining pool, this rate is fixed, regardless of actual blocks found and the luck involved finding them. We keep 50% for us to operate this service and to (hopefully) turn a profit.We try to run this service with as much transparency as possible. If your users solve hashes, you get paid. Period. The minimum payout threshold is 0.02 XMR (~$7).Payouts are fully automated and are initiated every 2nd hour, 12 times a day. If you reach the minimum payout threshold, you&#x27;ll automatically receive your money in the next batch.</p>
-      </div>
+        </div>
+        <div class="container">
+          <p>
+    <strong>What Cryptocurrency can I mine?</strong>
+    <br>
+    Currently you can only Monero with RhinoMint. However we are working hard on adding more cryptocurrencies to RhinoMint.co
+    <br><br>
+    <strong>Can I move my Cyptocurrency out of RhinoMint? How do I do it?</strong>
+    <br>Yes, you can move your currency out of RhinoMint.co, First login to Rhinomint.co and click on withdraw button.
+    <br>
+    <br>
+    <strong>My Hash Rate Seems Low – Why Monero?</strong>
+    <br>Monero is different. To mine Monero, you have to calculate hashes with an algorithm called Cryptonight. This algorithm is very compute heavy and – while overall pretty slow – was designed to run well on consumer CPUs.
+    <br>
+    <br>
+    <strong>What sort of payout can I expect?</strong>
+    <br>We pay per solved hash. The payout rate is adjusted automatically every few hours based on the global difficulty of the network and the average reward per block. The payout rate is calculated like this :(/) * * 0.5
+    <br>
+    With the current network difficulty of 69.83G (updated Jan 5, 2018 - 12:56:24) and average block reward of 5.78 XMR:
+    <br>
+   (<solved_hashes>/69829921279) * 5.78 XMR * 0.5
+    <br>
+    I.e. you get 50% of the average XMR we earn. Unlike a traditional mining pool, this rate is fixed, regardless of actual blocks found and the luck involved finding them. We keep 50% for us to operate this service and to (hopefully) turn a profit.
+    <br>
+    <br>
+   <strong>Does the miner work on Mobile devices?</strong>
+   <br>
+   Yes, but it's very slow and not really worth it. We highly recommend you to use a stable internet connection and a good pc.
+   <br>
+   <br>
+   <strong> Why is there a fee for certain payouts? </strong>
+   <br>
+   Payouts of at least 0.5 XMR made to plain Monero addresses do not incur a fee. For payouts below 0.5 XMR or payouts made to integrated addresses, such as used by exchanges and various web wallets, we charge a fee of 0.005 XMR per payout.
+   <br>
+   Unfortunately the transaction fees that we have to pay in the Monero network are quite high. Making lots of small payments is therefore quite expensive. Similarly, payouts sent to integrated addresses cannot be batched with other payouts into a single transaction and thus also cost a lot.
+   <br>
+   We're giving our users the option to pay part of these fees if they want to receive small payouts or payouts to exchanges.
+   <br>
+   Payouts to plain Monero addresses of at least 0.5 XMR will remain to be free.
+   <br>
+   The Monero network is also programmed to lower the reward for each block found over time. So each new block will give a lower reward than the last one.
+   <br>
+   Currently, the price rise of Monero offsets both of these factors. Our payout, calculated in USD, is now actually a bit higher than it was when we started.
+   <br>
+   <br>
+   <strong>
+   How can I run the Miner on the GPU / Graphics Card
+   </strong>
+   <br>
+   Currently RhinoMint doesn’t utilize your GPU / Graphics card. However we are working on a better solution which will be available in coming months.
+        </div>
     </div>
     <div class="section clients">
       <div class="container">
@@ -113,7 +160,7 @@
     </div>
     <div class="section footer copyright">
       <div class="w-container">
-        <div>Copyright 2014 Metric. All Rights Reserved. Brand logos for demonstration purposes only.</div>
+  <div>Copyright 2018 Fresh Economy Ltd. All Rights Reserved.</div>
       </div>
     </div>
 
