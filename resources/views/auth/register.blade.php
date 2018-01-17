@@ -60,12 +60,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="monero_wallet" class="col-md-4 control-label">Monero Wallet</label>
-
-                            <div class="col-md-6">
-                                <textarea id="monero_wallet" type="password" class="form-control" name="monero_wallet" required></textarea>
-                            </div>
+                        
 
                             @if ($errors->has('monero_wallet'))
                                 <span class="help-block">

@@ -43,8 +43,8 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'username' => 'required|string|max:255|unique:users',
             'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
-            'monero_wallet' => 'required|min:5'
+            'password' => 'required|string|min:6|confirmed'
+            
         ]);
     }
     /**
@@ -59,8 +59,7 @@ class RegisterController extends Controller
             'username' => $data['username'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-            'profile_picture' => "http://gravatar.com/avatar/" . md5(strtolower(trim($data['email']))) . "?d=monsterid",
-            'monero_wallet' => $data['monero_wallet']
+            'profile_picture' => "http://gravatar.com/avatar/" . md5(strtolower(trim($data['email']))) . "?d=monsterid"
         ]);
     }
 }

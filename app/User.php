@@ -11,7 +11,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'username', 'email', 'password', 'profile_picture', 'monero_wallet'
+        'username', 'email', 'password', 'profile_picture', 'xmr_balance'
     ];
 
         protected $events = [

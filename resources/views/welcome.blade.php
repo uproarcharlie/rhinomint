@@ -7,7 +7,7 @@
       <div class="col-sm-6"><img src="img/Rhinomint-logo.png" width="359" srcset="img/Rhinomint-logo-p-500.png 500w, img/Rhinomint-logo.png 1600w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 75vw, (max-width: 991px) 46vw, 359px">
         <p class="paragraph-2">Use your home or office computer to start mining cryptocurrencies. All you need is a browser like Chrome, IE, Mozilla or Brave and internet.</p>
         <div id="home-buttons">
-        <button href="#" class="start-miner-button">Start Mining</button><button href="#" class="withdraw-button">Withdraw</button>
+        <td><button onclick="location.href='{{ route('register') }}'" class="start-miner-button">Start Mining</button></td><td><button onclick="location.href='{{ route('register') }}'" class="withdraw-button">Withdraw</button></td>
       </div>
       </div>
       <div class="col-sm-6">
@@ -19,12 +19,12 @@
 
   <div class="section press">
     <div class="container">
-      <div class="small-text">IN THE PRESS</div>
-      <img src="img/logo_Fastcompany.svg" width="70" class="press-logo">
-      <img src="img/logo_Forbes.svg" width="70" class="press-logo">
-      <img src="img/logo_techcrunch.svg" width="70" class="press-logo">
-      <img src="img/logo_Wired.svg" width="70" class="press-logo">
-      <img src="img/logo_zdnet.svg" width="70" class="press-logo">
+      <div class="small-text">Hot ICOs people are investing in right now!</div>
+      <img src="img/coinfi.jpg" width="70" class="press-logo">
+      <img src="img/Appcoins.png" width="70" class="press-logo">
+      <img src="img/refereum.png" width="70" class="press-logo">
+      <img src="img/jibrelnetwork.png" width="70" class="press-logo">
+      <img src="img/retainly.png" width="70" class="press-logo">
     </div>
   </div>
 
@@ -67,7 +67,7 @@
             <div data-ix="fade-in-on-scroll" class="plan-wrapper">
               <h3>Sign Up</h3>
               <div class="price-point"><span>The first step is to sign up, there is no sign up fees or lengthy registration process.<br>The whole signup process takes less then 5 mins.<br></span></div>
-              <button href="#" class="how-it-works-button">Signup</button>
+              <td><button onclick="location.href='{{ route('register') }}'" class="how-it-works-button">Signup</button></td>
           </div>
         </div>
           <div class="col-sm-3">
@@ -75,7 +75,7 @@
               <h3>Login</h3>
               <div class="price-point"><span>After you have signed up, login to our website from your desired computer. </span>
               </div>
-              <button href="#" class="how-it-works-button">Login</button>
+              <td><button onclick="location.href='{{ route('register') }}'" class="how-it-works-button">Login</button></td>
           </div>
         </div>
           <div class="col-sm-3">
@@ -83,7 +83,7 @@
               <h3>Start mining</h3>
               <div class="price-point">After logging in just click on start mining and start collecting Monero.
               </div>
-              <button href="#" class="how-it-works-button">Start Mining</button>
+              <td><button onclick="location.href='{{ route('register') }}'" class="how-it-works-button">Start Mining</button></td>
           </div>
         </div>
           <div class="col-sm-3">
@@ -91,7 +91,7 @@
               <h3>Profit</h3>
               <div class="price-point">After couple of hours or after you have generated a certain amount you are eligible to checkout and transfer the Monero you have generated to your personal wallet or an exchange of your choice.
               </div>
-              <button href="#" class="how-it-works-button">Withdraw</button>
+              <td><button onclick="location.href='{{ route('register') }}'" class="how-it-works-button">Withdraw</button></td>
           </div>
         </div>
       </div>

@@ -39,6 +39,14 @@
       <div class="profile-summary">
 
         <h1 class="heading-4">Profile Info</h1>
+          @if(session('success'))
+              <p>{{ session('success') }}</p>
+          @endif
+
+          @if(session('error'))
+              <p>{{ session('error') }}</p>
+          @endif
+
           @if($output['success'] == true)
               Name: {{ $output['name'] }}<bR>
               Total: {{ $output['total'] }}<bR>
@@ -52,7 +60,7 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <button class"close" data-dismiss="modal">&times;</button>
+                <button class="close" data-dismiss="modal">&times;</button>
                 <h4>Withdraw</h4>
                 <ul>
                   <li>Hash Balance: <strong>{{ $output['balance'] }}</strong></li>
@@ -60,16 +68,18 @@
                 </ul>
               </div>
               <div class="withdraw-body">
-                <form>
+                <form action="" method="post">
+                    {!! csrf_field() !!}
                   <div class="form-group">
                     <label for="inputWithdrawAmount">Withdraw Hashes</label>
-                    <input class="form-control" placeholder="0.5XMR Minimum Withdrawal" type="number" id="inputWithdrawAmount" required>
+                    <input class="form-control" name="amount" placeholder="0.5XMR Minimum Withdrawal" type="number" id="inputWithdrawAmount" required>
                   </div>
                   <div class="form-group">
                     <labal for="inputMoneroWallet">XMR Wallet Address</label>
-                      <input class="form-control" Placeholder="Wallet Address" type="text" id="inputMoneroWallet" required>
+                      <input class="form-control" Placeholder="Wallet Address" type="text" id="inputMoneroWallet" value="{{ Auth::user()->monero_wallet }}" required>
                     </div>
-                    <button type="submit" class="last-withdraw-button">Withdraw</button>
+                    <button type="submit" class="withdraw-button" disabled>Withdraw</button>
+                    <br>You currently don't have enough XMR to withdraw.</br>
                   </form>
                 </div>
               </div>
@@ -92,12 +102,12 @@
 
 <div class="section press">
   <div class="container">
-    <div class="small-text">IN THE PRESS</div>
-    <img src="img/logo_Fastcompany.svg" width="70" class="press-logo">
-    <img src="img/logo_Forbes.svg" width="70" class="press-logo">
-    <img src="img/logo_techcrunch.svg" width="70" class="press-logo">
-    <img src="img/logo_Wired.svg" width="70" class="press-logo">
-    <img src="img/logo_zdnet.svg" width="70" class="press-logo">
+    <div class="small-text">Hot ICOs people are investing in right now!</div>
+    <img src="img/coinfi.jpg" width="70" class="press-logo">
+    <img src="img/Appcoins.png" width="70" class="press-logo">
+    <img src="img/refereum.png" width="70" class="press-logo">
+    <img src="img/jibrelnetwork.png" width="70" class="press-logo">
+    <img src="img/retainly.png" width="70" class="press-logo">
   </div>
 </div>
 
