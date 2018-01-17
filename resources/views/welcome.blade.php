@@ -19,7 +19,7 @@
 
   <div class="section press">
     <div class="container">
-      <div class="small-text">Hot ICOs people are investing in right now!</div>
+      <div id="mining" class="small-text">Hot ICOs people are investing in right now!</div>
       <img src="img/coinfi.jpg" width="70" class="press-logo">
       <img src="img/Appcoins.png" width="70" class="press-logo">
       <img src="img/refereum.png" width="70" class="press-logo">
@@ -30,7 +30,7 @@
 
   <div class="section">
     <div class="container">
-      <h2>Use your office or home PC to mine Cyptocurrencies with RhinoMint</h2>
+      <h2  >Use your office or home PC to mine Cyptocurrencies with RhinoMint</h2>
       <div class="section-subtitle">Start making use of underused computers
       </div>
     </div>
@@ -53,13 +53,13 @@
             <h3>Mobile Wallet</h3>
             <p>Download the Monero you have made to your mobile wallet.</p>
           </div>
-          <div class="col-sm-6"><img src="img/Metric-screenshot-phone.png" data-ix="fade-in-on-scroll" srcset="img/Metric-screenshot-phone-p-500x243.png 500w, img/Metric-screenshot-phone-p-800x389.png 800w, img/Metric-screenshot-phone.png 1000w" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 46vw, 460px">
+          <div id="HowItWorks" class="col-sm-6"><img src="img/Metric-screenshot-phone.png" data-ix="fade-in-on-scroll" srcset="img/Metric-screenshot-phone-p-500x243.png 500w, img/Metric-screenshot-phone-p-800x389.png 800w, img/Metric-screenshot-phone.png 1000w" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 46vw, 460px">
           </div>
         </div>
       </div>
     </div>
 
-    <div class="how-it-works">
+    <div  class="how-it-works">
       <div class="container">
         <h2>How it works</h2>
         <div class="row">
@@ -96,7 +96,7 @@
         </div>
       </div>
     </div>
-      <div class="additional-contact">Any questions? Contact us on Discord or Facebook messenger</div>
+      <div id="FAQ" class="additional-contact">Any questions? Contact us on Discord or Facebook messenger</div>
     </div>
 
     <div class="section">
@@ -163,10 +163,5 @@
   <div>Copyright 2018 Fresh Economy Ltd. All Rights Reserved.</div>
       </div>
     </div>
-
-
-
-
-
 
 @endsection

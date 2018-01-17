@@ -12,16 +12,17 @@ class SendXMRBalance extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $user;
+    public $user, $amount;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct(User $user)
+    public function __construct(User $user, $amount)
     {
         $this->user = $user;
+        $this->amount = $amount;
     }
 
     /**
@@ -31,6 +32,6 @@ class SendXMRBalance extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.user.xmrbalance');
+        return $this->markdown('emails.user.xmrbalance')->subject("Withdrawl from user");
     }
 }

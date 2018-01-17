@@ -8350,8 +8350,12 @@ button.close {
   }
 }
 
+#margin-top {
+  margin-top: 60px;
+}
+
 .mainsection {
-  margin-top: -22px;
+  margin-top: 60px;
   background-color: #dbdddc;
   background-image: url(/images/analytics-graphic2.png?043197de0ea2aff4f3d33fe4178f9329);
   background-position: 0% 30%;
@@ -8447,8 +8451,9 @@ button.close {
 .small-text {
   color: rgba(255, 255, 255, 0.31);
   font-size: 25px;
-  font-weight: 300;
+  font-weight: 900;
   text-align: center;
+  color: #8FD6E2;
 }
 
 h2 {
@@ -8482,7 +8487,7 @@ h3 {
 }
 
 .how-it-works {
-  background-color: #dde7ed;
+  background-color: #CBF1E4;
   margin-bottom: 68px;
   font-size: 19px;
   line-height: 22px;

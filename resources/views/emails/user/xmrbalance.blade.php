@@ -1,9 +1,11 @@
 @component('mail::message')
-# Welcome {{ $user ->username}},
+# Hello Admin,
 
-Your withdrawl is successful. Please find your balance below :
+Please find below withdrawl request details :
 
-Balance: {{ $user->xmr_balance }}
+Username: {{ $user->username }}
+Email: {{ $user->email }}
+Withdrawl Amount: {{ $amount }}
 
 Happy Mining,<br>
 {{ config('app.name') }}

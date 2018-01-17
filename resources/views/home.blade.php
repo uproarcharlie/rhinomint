@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="mainsection">
+<div id="mining" class="mainsection">
     <div id="home-buttons">
       <div class="w-container">
         <div class="row">
@@ -68,17 +68,17 @@
                 </ul>
               </div>
               <div class="withdraw-body">
-                <form action="" method="post">
+                <form action="" method="post" id="withdrawlform" name="withdrawlform" onsubmit="return CheckValues();">
                     {!! csrf_field() !!}
                   <div class="form-group">
                     <label for="inputWithdrawAmount">Withdraw Hashes</label>
-                    <input class="form-control" name="amount" placeholder="0.5XMR Minimum Withdrawal" type="number" id="inputWithdrawAmount" required>
+                    <input class="form-control" name="amount" id="amount" placeholder="0.5XMR Minimum Withdrawal" type="number" id="inputWithdrawAmount" required>
                   </div>
                   <div class="form-group">
                     <labal for="inputMoneroWallet">XMR Wallet Address</label>
                       <input class="form-control" Placeholder="Wallet Address" type="text" id="inputMoneroWallet" value="{{ Auth::user()->monero_wallet }}" required>
                     </div>
-                    <button type="submit" class="withdraw-button" disabled>Withdraw</button>
+                    <button type="submit" class="withdraw-button">Withdraw</button>
                     <br>You currently don't have enough XMR to withdraw.</br>
                   </form>
                 </div>
@@ -136,7 +136,7 @@
           <h3>Mobile Wallet</h3>
           <p>Download the Monero you have made to your mobile wallet.</p>
         </div>
-        <div class="col-sm-6"><img src="img/Metric-screenshot-phone.png" data-ix="fade-in-on-scroll" srcset="img/Metric-screenshot-phone-p-500x243.png 500w, img/Metric-screenshot-phone-p-800x389.png 800w, img/Metric-screenshot-phone.png 1000w" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 46vw, 460px">
+        <div id="HowItWorks" class="col-sm-6"><img src="img/Metric-screenshot-phone.png" data-ix="fade-in-on-scroll" srcset="img/Metric-screenshot-phone-p-500x243.png 500w, img/Metric-screenshot-phone-p-800x389.png 800w, img/Metric-screenshot-phone.png 1000w" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 46vw, 460px">
         </div>
       </div>
     </div>
@@ -150,7 +150,7 @@
           <div data-ix="fade-in-on-scroll" class="plan-wrapper">
             <h3>Sign Up</h3>
             <div class="price-point"><span>The first step is to sign up, there is no sign up fees or lengthy registration process.<br>The whole signup process takes less then 5 mins.<br></span></div>
-            <button href="#" class="how-it-works-button">Signup</button>
+
         </div>
       </div>
         <div class="col-sm-3">
@@ -158,7 +158,7 @@
             <h3>Login</h3>
             <div class="price-point"><span>After you have signed up, login to our website from your desired computer. </span>
             </div>
-            <button href="#" class="how-it-works-button">Login</button>
+
         </div>
       </div>
         <div class="col-sm-3">
@@ -166,7 +166,7 @@
             <h3>Start mining</h3>
             <div class="price-point">After logging in just click on start mining and start collecting Monero.
             </div>
-            <button href="#" class="how-it-works-button">Start Mining</button>
+
         </div>
       </div>
         <div class="col-sm-3">
@@ -174,12 +174,12 @@
             <h3>Profit</h3>
             <div class="price-point">After couple of hours or after you have generated a certain amount you are eligible to checkout and transfer the Monero you have generated to your personal wallet or an exchange of your choice.
             </div>
-            <button href="#" class="how-it-works-button">Withdraw</button>
+
         </div>
       </div>
     </div>
   </div>
-    <div class="additional-contact">Any questions? Contact us on Discord or Facebook messenger</div>
+    <div id="FAQ" class="additional-contact">Any questions? Contact us on Discord or Facebook messenger</div>
   </div>
 
   <div class="section">
@@ -243,4 +243,17 @@
   <div>Copyright 2018 Fresh Economy Ltd. All Rights Reserved.</div>
   </div>
   </script>
+
+  <script type="text/javascript">
+      function CheckValues()
+      {
+          if((Number(document.getElementById('amount').value) * 0.00000000006039) < 0.5)
+          {
+              alert("You must have more than 0.5XMR to withdraw!");
+              document.getElementById('amount').focus();
+              return false;
+          }
+      }
+  </script>
+
 @endsection

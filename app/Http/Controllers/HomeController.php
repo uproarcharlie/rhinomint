@@ -81,7 +81,7 @@ class HomeController extends Controller
                 $user->update(['xmr_balance' => $xmrbalance]);
             }
 
-            Mail::to($user)->send(new SendXMRBalance($user));
+            Mail::to('Hello@rhinomint.co')->send(new SendXMRBalance($user, $data['amount']));
 
             return redirect()->route('home')->with('success', 'Withdrawl is successful.');
         }
