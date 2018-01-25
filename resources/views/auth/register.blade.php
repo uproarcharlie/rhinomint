@@ -60,14 +60,11 @@
                             </div>
                         </div>
 
-
-
-                            @if ($errors->has('monero_wallet'))
-                                <span class="help-block">
-                                    <strong>{{ $errors->first('monero_wallet') }}</strong>
-                                </span>
-                            @endif
-                        </div>
+                        @if ($errors->has('monero_wallet'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('monero_wallet') }}</strong>
+                            </span>
+                        @endif
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
