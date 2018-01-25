@@ -31,7 +31,7 @@
       <?php
       $xmrPerHash = 	0.00000000006039;
 
-      $xmrBalance = $xmrPerHash * $output['balance'];
+      $xmrBalance = $xmrPerHash * @$output['balance'];
 
        ?>
 
@@ -51,7 +51,7 @@
               Name: {{ $output['name'] }}<bR>
               Total: {{ $output['total'] }}<bR>
               Withdrawn: {{ $output['withdrawn'] }}<bR>
-              Balance: {{ $output['balance'] }}<bR>
+              Balance: {{ @$output['balance'] }}<bR>
           @endif
   <button class="withdraw-button" data-target="#withdrawModal" data-toggle="modal">Withdraw</button>
 
@@ -63,7 +63,7 @@
                 <button class="close" data-dismiss="modal">&times;</button>
                 <h4>Withdraw</h4>
                 <ul>
-                  <li>Hash Balance: <strong>{{ $output['balance'] }}</strong></li>
+                  <li>Hash Balance: <strong>{{ @$output['balance'] }}</strong></li>
                   <li>Monero Balance: <strong>{{ number_format($xmrBalance, 8) }}</strong></li>
                 </ul>
               </div>
