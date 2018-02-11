@@ -17,7 +17,6 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->string('profile_picture');
-            $table->text('monero_wallet');
             $table->rememberToken();
             $table->timestamps();
         });

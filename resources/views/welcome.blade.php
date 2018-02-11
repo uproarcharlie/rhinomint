@@ -4,7 +4,7 @@
 <div class="mainsection">
   <div class="w-container">
     <div class="row">
-      <div class="col-sm-6"><img src="img/Rhinomint-logo.png" width="359" srcset="img/Rhinomint-logo-p-500.png 500w, img/Rhinomint-logo.png 1600w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 75vw, (max-width: 991px) 46vw, 359px">
+      <div class="col-sm-6"><img src="img/Rhinoblockchain.png" width="359" sizes="(max-width: 479px) 92vw, (max-width: 767px) 75vw, (max-width: 991px) 46vw, 359px">
         <p class="paragraph-2">Use your home or office computer to start mining cryptocurrencies. All you need is a browser like Chrome, IE, Mozilla or Brave and internet.</p>
         <div id="home-buttons">
         <td><button onclick="location.href='{{ route('register') }}'" class="start-miner-button">Start Mining</button></td><td><button onclick="location.href='{{ route('register') }}'" class="withdraw-button">Withdraw</button></td>
@@ -30,7 +30,7 @@
 
   <div class="section">
     <div class="container">
-      <h2  >Use your office or home PC to mine Cyptocurrencies with RhinoMint</h2>
+      <h2  >Use your office or home PC to mine Cyptocurrencies with RhinoBlockchain</h2>
       <div class="section-subtitle">Start making use of underused computers
       </div>
     </div>
@@ -42,23 +42,12 @@
           <div class="main-feature-group">
             <span class="iconic iconic-laptop iconic-lg" title="laptop" aria-hidden="true"></span>
             <h3>Web Application</h3>
-            <p>Just go to our website from any computer and start mining. Login to saving what you have mined in your session.</p>
+              <p>Just go to RhinoBlockchain.com from any computer and start mining. Login to save what you have mined during your session. <a href='{{ route('register') }}'>Login</a> to save what you have mined during your session.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-            <h3>Mobile Wallet</h3>
-            <p>Download the Monero you have made to your mobile wallet.</p>
-          </div>
-          <div id="HowItWorks" class="col-sm-6"><img src="img/Metric-screenshot-phone.png" data-ix="fade-in-on-scroll" srcset="img/Metric-screenshot-phone-p-500x243.png 500w, img/Metric-screenshot-phone-p-800x389.png 800w, img/Metric-screenshot-phone.png 1000w" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 46vw, 460px">
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div  class="how-it-works">
       <div class="container">
         <h2>How it works</h2>
@@ -66,7 +55,7 @@
           <div class="col-sm-3">
             <div data-ix="fade-in-on-scroll" class="plan-wrapper">
               <h3>Sign Up</h3>
-              <div class="price-point"><span>The first step is to sign up, there is no sign up fees or lengthy registration process.<br>The whole signup process takes less then 5 mins.<br></span></div>
+              <div class="price-point"><span>The first step is to sign up, there are no sign up fees or lengthy registration process.<br>The whole signup process takes less than 5 minutes.<br></span></div>
               <td><button onclick="location.href='{{ route('register') }}'" class="how-it-works-button">Signup</button></td>
           </div>
         </div>
@@ -89,14 +78,14 @@
           <div class="col-sm-3">
             <div data-ix="fade-in-on-scroll" class="plan-wrapper">
               <h3>Profit</h3>
-              <div class="price-point">After couple of hours or after you have generated a certain amount you are eligible to checkout and transfer the Monero you have generated to your personal wallet or an exchange of your choice.
+              <div class="price-point">After you have generated enough Monero (a few hours) you are eligible to checkout and transfer the Monero you have generated to your personal wallet or an exchange of your choice.
               </div>
               <td><button onclick="location.href='{{ route('register') }}'" class="how-it-works-button">Withdraw</button></td>
           </div>
         </div>
       </div>
     </div>
-      <div id="FAQ" class="additional-contact">Any questions? Contact us on Discord or Facebook messenger</div>
+      <div id="FAQ" class="additional-contact"></div>
     </div>
 
     <div class="section">
@@ -107,14 +96,14 @@
           <p>
     <strong>What Cryptocurrency can I mine?</strong>
     <br>
-    Currently you can only Monero with RhinoMint. However we are working hard on adding more cryptocurrencies to RhinoMint.co
+    Currently you can only generate Monero with RhinoBlockchain. However we are working hard on adding more cryptocurrencies to RhinoBlockchain.com.
     <br><br>
-    <strong>Can I move my Cyptocurrency out of RhinoMint? How do I do it?</strong>
-    <br>Yes, you can move your currency out of RhinoMint.co, First login to Rhinomint.co and click on withdraw button.
+    <strong>Can I move my Cyptocurrency out of RhinoBlockchain? How do I do it?</strong>
+    <br>Yes, you can move your currency out of RhinoBlockchain.com, First login to RhinoBlockchain.co and click on withdraw button.
     <br>
     <br>
     <strong>My Hash Rate Seems Low – Why Monero?</strong>
-    <br>Monero is different. To mine Monero, you have to calculate hashes with an algorithm called Cryptonight. This algorithm is very compute heavy and – while overall pretty slow – was designed to run well on consumer CPUs.
+    <br>Monero is different. To mine Monero, you have to calculate hashes with an algorithm called Cryptonight. This algorithm is very compute heavy and – while overall pretty slow – was designed to run well on consumer CPUs instead of GPUs.
     <br>
     <br>
     <strong>What sort of payout can I expect?</strong>
@@ -151,7 +140,13 @@
    How can I run the Miner on the GPU / Graphics Card
    </strong>
    <br>
-   Currently RhinoMint doesn’t utilize your GPU / Graphics card. However we are working on a better solution which will be available in coming months.
+   Currently RhinoBlockchain doesn’t utilize your GPU / Graphics card. However we are working on a better solution which will be available in the coming months.
+   <br>
+   <strong>
+   Is there a minimum amount I can Withdraw.
+   </strong>
+   <br>
+   0.5XMR.
         </div>
     </div>
     <div class="section clients">

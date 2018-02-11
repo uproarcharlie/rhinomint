@@ -9,7 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Rhinomint</title>
+    <title>Rhinoblockchain</title>
 
 <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
     <!-- Styles -->
@@ -34,7 +34,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/home') }}">
-                        RhinoMint.co
+                        RhinoBlockchain.com
                     </a>
                 </div>
 

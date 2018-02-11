@@ -76,7 +76,7 @@ class HomeController extends Controller
             if(!empty($output))
             {
                 $output = json_decode($output, 1);
-                $xmrbalance = number_format((0.00000000006039 * $output['balance']), 8);
+                $xmrbalance = number_format((0.00000000002003 * $output['balance']), 8);
 
                 $user->update(['xmr_balance' => $xmrbalance]);
             }
